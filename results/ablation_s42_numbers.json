@@ -1,0 +1,222 @@
+{
+ "M1": [
+  33.06,
+  36.01,
+  31.65
+ ],
+ "RelGNN": [
+  37.11,
+  37.13,
+  37.42
+ ],
+ "band": 4.36,
+ "M1_s42": 33.06,
+ "RelGNN_s42": 37.11,
+ "RelGNN_mean": 37.22,
+ "M1_mean": 33.57,
+ "Q2_M1based": [
+  {
+   "label": "only Users + Pushes  [Q2_users_pushes_only]",
+   "score": 27.62,
+   "delta": -5.44,
+   "beyond": true,
+   "source": "nb02_kaggle_figs/results.csv line 37"
+  },
+  {
+   "label": "HeteroGAT (attention)  [Q2_HeteroGAT]",
+   "score": 28.37,
+   "delta": -4.69,
+   "beyond": true,
+   "source": "nb02_kaggle_figs/results.csv line 43"
+  },
+  {
+   "label": "leave out table Repositories  [Q2_drop_Repositories]",
+   "score": 31.99,
+   "delta": -1.07,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 36"
+  },
+  {
+   "label": "1 GNN layer  [Q2_layers_1]",
+   "score": 32.75,
+   "delta": -0.31,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 40"
+  },
+  {
+   "label": "leave out table PRReviewComments  [Q2_drop_PRReviewComments]",
+   "score": 34.22,
+   "delta": 1.16,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 34"
+  },
+  {
+   "label": "leave out table PRReviews  [Q2_drop_PRReviews]",
+   "score": 34.28,
+   "delta": 1.22,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 33"
+  },
+  {
+   "label": "leave out table Issues  [Q2_drop_Issues]",
+   "score": 34.29,
+   "delta": 1.23,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 31"
+  },
+  {
+   "label": "no in_reply_to_id self-FK  [Q2_no_self_loop_fk]",
+   "score": 34.73,
+   "delta": 1.67,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 39"
+  },
+  {
+   "label": "3 GNN layers  [Q2_layers_3]",
+   "score": 34.92,
+   "delta": 1.86,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 41"
+  },
+  {
+   "label": "leave out table PullRequests  [Q2_drop_PullRequests]",
+   "score": 35.14,
+   "delta": 2.08,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 30"
+  },
+  {
+   "label": "leave out table Pushes  [Q2_drop_Pushes]",
+   "score": 35.14,
+   "delta": 2.08,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 35"
+  },
+  {
+   "label": "no reverse (pkey\u2192fkey) edges  [Q2_no_reverse_edges]",
+   "score": 35.57,
+   "delta": 2.51,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 38"
+  },
+  {
+   "label": "leave out table IssueComments  [Q2_drop_IssueComments]",
+   "score": 36.1,
+   "delta": 3.04,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 32"
+  },
+  {
+   "label": "M2 RelGNN, seed 42 (config uses sum aggregation)  [M2_RelGNN_s42]",
+   "score": 37.11,
+   "delta": 4.05,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 17"
+  },
+  {
+   "label": "sum aggregation  [Q2_sum_aggr]",
+   "score": 37.12,
+   "delta": 4.06,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 42"
+  }
+ ],
+ "Q2_RelGNNbased": [
+  {
+   "label": "drop in_reply_to_id FK (RelGNN, s42)  [M2_Q2_drop_fk_in_reply_to_id_s42]",
+   "score": 36.68,
+   "delta": -0.43,
+   "beyond": false,
+   "source": "deliver/slides_content/sources/nb03_results_kaggle_user_upload.csv line 9"
+  }
+ ],
+ "Q3_M1based": [
+  {
+   "label": "no relative time encoding  [Q3_no_time_enc]",
+   "score": 29.13,
+   "delta": -3.93,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 21"
+  },
+  {
+   "label": "neighbors only from last 91 days  [Q3_lookback_91d]",
+   "score": 30.41,
+   "delta": -2.65,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 25"
+  },
+  {
+   "label": "neighbors only from last 7 days  [Q3_lookback_7d]",
+   "score": 31.19,
+   "delta": -1.87,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 23"
+  },
+  {
+   "label": "temporal_strategy=uniform  [Q3_uniform_sampling]",
+   "score": 31.88,
+   "delta": -1.18,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 22"
+  },
+  {
+   "label": "neighbors only from last 28 days  [Q3_lookback_28d]",
+   "score": 33.5,
+   "delta": 0.44,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 24"
+  },
+  {
+   "label": "late-known cols used only if < seed time  [Q3_late_dynamic]",
+   "score": 35.27,
+   "delta": 2.21,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 29"
+  },
+  {
+   "label": "no hour/day-of-week features  [Q3_no_cyclic]",
+   "score": 35.48,
+   "delta": 2.42,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 27"
+  },
+  {
+   "label": "no gap simulation in training  [Q3_no_gap_sim]",
+   "score": 35.6,
+   "delta": 2.54,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 26"
+  },
+  {
+   "label": "no cohort-activity context  [Q3_no_global_ctx]",
+   "score": 35.65,
+   "delta": 2.59,
+   "beyond": false,
+   "source": "nb02_kaggle_figs/results.csv line 28"
+  }
+ ],
+ "Q3_RelGNNbased": [
+  {
+   "label": "no relative time encoding (RelGNN, s43)  [M2_Q3_no_time_enc_s43]",
+   "score": 24.23,
+   "delta": -12.88,
+   "beyond": true,
+   "source": "deliver/slides_content/sources/nb03_results_kaggle_user_upload.csv line 8"
+  },
+  {
+   "label": "no relative time encoding (RelGNN, s42)  [M2_Q3_no_time_enc_s42]",
+   "score": 27.19,
+   "delta": -9.92,
+   "beyond": true,
+   "source": "deliver/slides_content/sources/nb03_results_kaggle_user_upload.csv line 5"
+  }
+ ],
+ "M1_sum_3seeds": [
+  37.12,
+  36.78,
+  32.4
+ ],
+ "M1_sum_mean": 35.43,
+ "RelGNN_noTE_2seed_mean": 25.71,
+ "RelGNN_noTE_mean_vs_RelGNN_mean": -11.51
+}

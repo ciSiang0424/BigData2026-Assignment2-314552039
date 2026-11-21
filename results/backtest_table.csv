@@ -1,0 +1,21 @@
+model,name,val_offset,val_cutoff_utc,score_pct,results_csv_line,backtest_raw_score_pct,label_week_tw,cohort_push_users
+M2 RelGNN (s42),M2_RelGNN_s42_val-3w,3,2026-10-17 16:00:00,48.3296,51,48.3296,2026-10-18,1848
+M2 RelGNN (s42),M2_RelGNN_s42_val-2w,2,2026-10-24 16:00:00,39.5971,48,39.5971,2026-10-25,1009
+M2 RelGNN (s42),M2_RelGNN_s42_val-1w,1,2026-10-31 16:00:00,36.9033,45,36.9033,2026-11-01,283
+M2 RelGNN (s42),M2_RelGNN_s42,0,2026-11-07 16:00:00,37.1062,17,37.1062,2026-11-08,277
+LightGBM (counts),LightGBM_counts_val-3w,3,2026-10-17 16:00:00,49.2149,52,49.2149,2026-10-18,1848
+LightGBM (counts),LightGBM_counts_val-2w,2,2026-10-24 16:00:00,39.8175,49,39.8175,2026-10-25,1009
+LightGBM (counts),LightGBM_counts_val-1w,1,2026-10-31 16:00:00,35.895,46,35.895,2026-11-01,283
+LightGBM (counts),LightGBM_counts,0,2026-11-07 16:00:00,34.8312,20,34.8312,2026-11-08,277
+M1 SAGE (s42),M1_s42_val-3w,3,2026-10-17 16:00:00,47.1083,50,47.1083,2026-10-18,1848
+M1 SAGE (s42),M1_s42_val-2w,2,2026-10-24 16:00:00,39.3399,47,39.3399,2026-10-25,1009
+M1 SAGE (s42),M1_s42_val-1w,1,2026-10-31 16:00:00,36.7962,44,36.7962,2026-11-01,283
+M1 SAGE (s42),M1_s42,0,2026-11-07 16:00:00,33.0647,14,33.0647,2026-11-08,277
+Copy last week,Copy last week@val-3w,3,2026-10-17 16:00:00,45.246,12,45.246,2026-10-18,1848
+Copy last week,Copy last week@val-2w,2,2026-10-24 16:00:00,38.4875,9,38.4875,2026-10-25,1009
+Copy last week,Copy last week@val-1w,1,2026-10-31 16:00:00,31.8712,6,31.8712,2026-11-01,283
+Copy last week,Copy last week,0,2026-11-07 16:00:00,34.0525,3,34.0525,2026-11-08,277
+Copy last week (gap),Copy last week (gap)@val-3w,3,2026-10-17 16:00:00,43.6576,13,43.6576,2026-10-18,1848
+Copy last week (gap),Copy last week (gap)@val-2w,2,2026-10-24 16:00:00,36.9343,10,36.9343,2026-10-25,1009
+Copy last week (gap),Copy last week (gap)@val-1w,1,2026-10-31 16:00:00,29.2603,7,29.2603,2026-11-01,283
+Copy last week (gap),Copy last week (gap),0,2026-11-07 16:00:00,29.9469,4,29.9469,2026-11-08,277

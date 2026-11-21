@@ -1,0 +1,31 @@
+{
+ "data_source": "GH Archive https://www.gharchive.org/",
+ "start_utc": "2025-12-01-0",
+ "end_utc_inclusive": "2026-11-18-12",
+ "mode": "prefilter",
+ "repo_commit": "af9f335301d9badb482dfafa10c4534eabac845a",
+ "preprocess_sha256": "e281e4f72f56b1d4e8c8c68b57ba35700f7ad7d720cd7f643e4e132935dde517",
+ "cohort_sha256": "4d3c38abfaa85928c8c6ee5ccdbaf4c5702c981167f354cdb83258d516d3309c",
+ "versions": {
+  "python": "3.14.7",
+  "pandas": "3.1.1",
+  "pyarrow": "26.0.1",
+  "platform": "macOS-14.6.1-arm64-arm-64bit-Mach-O"
+ },
+ "hours_requested": 8461,
+ "hours_missing_on_gharchive": [],
+ "raw_bytes_total": 231568889599,
+ "cohort_event_lines_total": 2393811,
+ "seconds_this_run_total": 14209,
+ "seconds_preprocess": 151,
+ "rows": {
+  "IssueComments": 108418,
+  "Issues": 177995,
+  "PRReviewComments": 67426,
+  "PRReviews": 93074,
+  "PullRequests": 311030,
+  "Pushes": 1677538,
+  "Repositories": 111215,
+  "Users": 46312
+ }
+}

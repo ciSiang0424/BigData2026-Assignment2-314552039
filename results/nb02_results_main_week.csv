@@ -1,0 +1,34 @@
+name,group,basis,desc,score,macro_f1,micro_f1,f1_open_pr,f1_open_issue,f1_issue_comment,f1_pr_review,f1_pr_review_comment,f1_push,score_calib_probthr,score_th05,score_val_rate_optimistic,mean_auc,best_epoch,epochs_run,total_min
+All zeros,baseline,baseline,predict all 0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,,,,,,,
+Copy last week,baseline,baseline,README: did it in the 7 days before t,34.05,33.86,34.25,34.45,42.97,34.74,36.44,26.9,27.65,,,,,,,
+Copy last week (gap),baseline,baseline,"same, but only data visible at the feature cutoff",29.95,29.2,30.7,32.51,39.24,31.56,34.78,25.16,11.95,,,,,,,
+M1_s42,Q4,lecture,M1 HeteroGraphSAGE (RelBench),33.06,32.89,33.24,36.01,36.22,28.09,32.22,29.35,35.47,10.89,12.86,36.38,0.8448839100613985,5.0,8.0,15.5
+M1_s43,Q4,lecture,M1 HeteroGraphSAGE (RelBench),36.01,35.8,36.22,39.34,36.86,32.44,37.2,33.33,35.63,16.16,18.25,38.33,0.8520582092834154,4.0,7.0,13.4
+M1_s44,Q4,lecture,M1 HeteroGraphSAGE (RelBench),31.65,31.59,31.7,31.52,36.73,26.42,32.29,28.57,34.0,8.94,8.96,33.57,0.8250633460357797,7.0,8.0,15.2
+M2_RelGNN_s42,Q2,lecture,M2 RelGNN atomic routes,37.11,36.98,37.23,36.66,38.35,35.2,42.31,33.59,35.78,12.08,12.75,39.32,0.8568888521120952,5.0,8.0,30.1
+M2_RelGNN_s43,Q2,lecture,M2 RelGNN atomic routes,37.13,36.93,37.32,38.19,43.01,38.81,33.67,32.48,35.43,10.45,11.58,39.68,0.8616172386691678,8.0,8.0,30.4
+M2_RelGNN_s44,Q2,lecture,M2 RelGNN atomic routes,37.42,37.54,37.3,37.56,42.86,36.52,39.69,34.48,34.12,12.31,12.97,39.9,0.8628847794353617,4.0,7.0,26.6
+LightGBM_counts,Q4,baseline,LightGBM on COUNT/recency features,34.83,34.06,35.6,38.17,39.12,33.6,38.52,22.86,32.13,32.95,32.17,37.25,0.8584182242853914,0.0,0.0,1.2
+Q3_no_time_enc,Q3,lecture,no relative time encoding,29.13,29.1,29.16,31.27,31.64,25.1,28.92,29.46,28.21,8.96,9.31,30.97,0.8124599347841922,8.0,8.0,15.6
+Q3_uniform_sampling,Q3,lecture,temporal_strategy=uniform,31.88,31.57,32.19,35.2,36.79,28.92,32.22,25.9,30.39,10.55,11.8,33.28,0.8283817799394925,7.0,8.0,16.1
+Q3_lookback_7d,Q3,lecture,neighbors only from last 7 days,31.19,31.31,31.07,30.58,39.39,30.08,36.64,28.25,22.95,10.92,14.98,32.92,0.7252512247679008,6.0,8.0,16.0
+Q3_lookback_28d,Q3,lecture,neighbors only from last 28 days,33.5,33.14,33.86,34.83,41.34,30.48,36.51,25.17,30.5,10.86,11.66,35.15,0.8365391354043297,5.0,8.0,16.2
+Q3_lookback_91d,Q3,lecture,neighbors only from last 91 days,30.41,29.56,31.26,35.16,38.57,26.51,33.75,16.46,26.9,12.35,12.96,32.13,0.8303410577305458,5.0,8.0,16.3
+Q3_no_gap_sim,Q3,design (ours),no gap simulation in training,35.6,35.05,36.15,40.22,40.34,32.27,36.33,27.64,33.54,14.31,20.14,37.0,0.8513706116072853,7.0,8.0,16.4
+Q3_no_cyclic,Q3,design (ours),no hour/day-of-week features,35.48,35.04,35.93,38.85,39.18,33.27,35.7,27.54,35.67,11.54,13.43,37.58,0.8516336961278892,8.0,8.0,15.1
+Q3_no_global_ctx,Q3,design (ours),no cohort-activity context,35.65,35.53,35.76,38.41,42.16,34.14,35.22,31.11,32.17,34.75,19.02,36.81,0.8495016543777699,5.0,8.0,15.7
+Q3_late_dynamic,Q3,lecture,late-known cols used only if < seed time,35.27,34.84,35.69,36.49,39.68,32.86,36.53,26.67,36.8,12.97,16.04,37.04,0.8493660889724356,6.0,8.0,16.1
+Q2_drop_PullRequests,Q2,lecture,leave out table PullRequests,35.14,34.96,35.32,35.59,40.66,31.54,34.18,31.11,36.7,16.17,18.21,37.01,0.849149220162741,7.0,8.0,12.6
+Q2_drop_Issues,Q2,lecture,leave out table Issues,34.29,34.08,34.5,38.01,32.7,31.62,34.5,33.33,34.33,14.19,16.35,35.95,0.8380598733088568,5.0,8.0,12.6
+Q2_drop_IssueComments,Q2,lecture,leave out table IssueComments,36.1,35.59,36.6,37.25,40.59,32.35,36.78,27.55,39.06,11.17,13.18,38.51,0.8458658474324482,8.0,8.0,13.7
+Q2_drop_PRReviews,Q2,lecture,leave out table PRReviews,34.28,33.86,34.71,37.55,39.77,31.0,33.86,26.67,34.33,10.53,11.37,35.85,0.8448610970485465,7.0,8.0,13.3
+Q2_drop_PRReviewComments,Q2,lecture,leave out table PRReviewComments,34.22,33.76,34.67,36.05,37.47,34.17,37.14,22.81,34.94,9.96,11.28,36.09,0.8453122752243517,6.0,8.0,13.4
+Q2_drop_Pushes,Q2,lecture,leave out table Pushes,35.14,35.11,35.18,38.44,43.99,30.8,34.12,33.55,29.73,13.17,14.86,37.27,0.8405398346606917,5.0,8.0,13.5
+Q2_drop_Repositories,Q2,lecture,leave out table Repositories,31.99,32.31,31.67,28.26,32.84,28.11,36.75,34.53,33.39,9.49,9.85,34.03,0.8318117044587967,6.0,8.0,13.3
+Q2_users_pushes_only,Q2,lecture,only Users + Pushes,27.62,26.57,28.68,35.91,24.55,25.14,23.66,13.53,36.61,12.52,13.19,29.16,0.7851728616913868,5.0,8.0,3.7
+Q2_no_reverse_edges,Q2,lecture,no reverse (pkey→fkey) edges,35.57,35.22,35.92,38.61,41.13,31.78,36.36,28.24,35.17,13.09,15.55,37.23,0.8468616316096181,8.0,8.0,10.2
+Q2_no_self_loop_fk,Q2,lecture,no in_reply_to_id self-FK,34.73,34.95,34.52,36.89,38.56,30.34,33.46,36.23,34.24,11.74,13.6,37.04,0.8527483658922899,5.0,8.0,15.4
+Q2_layers_1,Q2,lecture,1 GNN layer,32.75,32.21,33.28,34.43,36.21,30.44,35.05,24.32,32.82,11.57,12.61,35.23,0.8391662150428925,8.0,8.0,9.1
+Q2_layers_3,Q2,lecture,3 GNN layers,34.92,34.45,35.38,38.33,39.14,34.22,35.2,25.62,34.18,13.03,15.03,36.8,0.8536886490284031,4.0,7.0,19.4
+Q2_sum_aggr,Q2,lecture,sum aggregation,37.12,36.84,37.39,38.15,40.32,34.82,39.68,30.57,37.5,12.35,14.12,39.27,0.852458452364134,5.0,8.0,15.3
+Q2_HeteroGAT,Q2,lecture,HeteroGAT (attention),28.37,28.85,27.88,22.37,31.63,25.81,32.84,30.07,30.4,10.16,10.99,30.24,0.7929934486137188,4.0,7.0,23.4

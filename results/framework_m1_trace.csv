@@ -1,0 +1,39 @@
+﻿tag,label,source (file:line or run_summary key)
+T1,GH Archive hourly files,deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: data_manifest.data_source
+T2,"final period, 8,520 h",deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: data_manifest.start_utc / end_utc_inclusive / hours_requested
+T3,"official preprocess, 8 tables",deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: data_manifest.preprocess_sha256 ; kaggle/asg2_lib.py:34
+T4,"9,000 cohort train users",deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: n_train_users ; deliver/m1_final/asg2_01_train_gnn.ipynb cell 16 line 1
+T5,row time column per table,kaggle/asg2_lib.py:333
+T6,"19 FKs, 38 edge types",kaggle/asg2_lib.py:41 ; kaggle/asg2_lib.py:327
+T7,late-known removed,kaggle/asg2_lib.py:56 ; kaggle/asg2_lib.py:321
+T8,cyclic features,kaggle/asg2_lib.py:179
+T9,seed time,kaggle/asg2_lib.py:406
+T10,temporal sampling,kaggle/asg2_lib.py:83 ; kaggle/asg2_lib.py:82 ; kaggle/asg2_lib.py:485
+T11,HeteroEncoder,kaggle/asg2_lib.py:499 ; kaggle/asg2_lib.py:90
+T12,HeteroTemporalEncoder,kaggle/asg2_lib.py:504 ; kaggle/asg2_lib.py:523
+T13,HeteroGraphSAGE mean 2x128,kaggle/asg2_lib.py:505 ; deliver/m1_final/asg2_01_train_gnn.ipynb cell 18 line 3 ; kaggle/asg2_lib.py:89 ; kaggle/asg2_lib.py:88 ; kaggle/asg2_lib.py:87
+T14,concat ctx,kaggle/asg2_lib.py:535
+T15,global ctx,kaggle/asg2_lib.py:371 ; kaggle/asg2_lib.py:510
+T16,MLP head 6 outputs,kaggle/asg2_lib.py:511
+T17,loss/optimizer,kaggle/asg2_lib.py:612 ; deliver/m1_final/asg2_01_train_gnn.ipynb cell 18 line 14 ; kaggle/asg2_lib.py:97
+T18,weekly cutoffs,kaggle/asg2_lib.py:78
+T19,label window,kaggle/asg2_lib.py:462
+T20,46 train cutoffs,deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: train_cutoffs_utc ; kaggle/asg2_lib.py:434
+T21,calib/val weeks,"deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: calib_cutoff_utc, val_cutoff_utc ; kaggle/asg2_lib.py:430"
+T22,gap,deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: gap ; kaggle/asg2_lib.py:424
+T23,epochs/patience/batch,kaggle/asg2_lib.py:95 ; kaggle/asg2_lib.py:96 ; kaggle/asg2_lib.py:84 ; kaggle/asg2_lib.py:101
+T24,epoch selection on val week,deliver/m1_final/asg2_01_train_gnn.ipynb cell 18 line 35 ; deliver/m1_final/asg2_01_train_gnn.ipynb cell 18 line 56
+T25,s_cal definition,deliver/m1_final/asg2_01_train_gnn.ipynb cell 18 line 28
+T26,tune_rates,kaggle/asg2_lib.py:570
+T27,apply_rates,kaggle/asg2_lib.py:585
+T28,r_cal for evaluation,deliver/m1_final/asg2_01_train_gnn.ipynb cell 20 line 5
+T29,RATES = r_val for test,deliver/m1_final/asg2_01_train_gnn.ipynb cell 20 line 6 ; deliver/m1_final/asg2_01_train_gnn.ipynb cell 22 line 6
+T30,final refit cutoffs,deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: final_train_cutoffs_utc ; kaggle/asg2_lib.py:435
+T31,final refit epochs,deliver/m1_final/asg2_01_train_gnn.ipynb cell 22 line 12
+T32,test feature time,kaggle/asg2_lib.py:406 ; deliver/slides_content/sources/final_m1_run_summary_user_upload_t103.json: data_end_exclusive_utc
+T33,test users,deliver/m1_final/asg2_01_train_gnn.ipynb cell 22 line 1
+T34,t,kaggle/asg2_lib.py:77
+T35,output file,deliver/m1_final/asg2_01_train_gnn.ipynb cell 22 line 22
+T36,apply rates to test,deliver/m1_final/asg2_01_train_gnn.ipynb cell 22 line 20
+T37,evaluate.py,deliver/m1_final/asg2_01_train_gnn.ipynb cell 24 line 1
+T38,saved artifacts,deliver/m1_final/asg2_01_train_gnn.ipynb cell 26 line 6 ; deliver/m1_final/asg2_01_train_gnn.ipynb cell 26 line 23

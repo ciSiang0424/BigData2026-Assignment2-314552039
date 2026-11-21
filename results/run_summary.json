@@ -1,0 +1,449 @@
+{
+ "smoke": false,
+ "student_id": "314552039",
+ "versions": {
+  "python": "3.13.16",
+  "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+  "numpy": "2.1.3",
+  "pandas": "2.3.3",
+  "torch": "2.11.0+cu130",
+  "cuda": "13.0",
+  "torch_geometric": "2.8.1",
+  "pyg_lib": "0.9.0+pt211cu130",
+  "torch_frame": "0.3.0",
+  "relbench": "3.1.0",
+  "pyarrow": "23.0.1"
+ },
+ "official_repo_commit": "af9f335301d9badb482dfafa10c4534eabac845a",
+ "data_dir": "/kaggle/input/datasets/xixixi703117/asg2-gharchive-db-final",
+ "data_manifest": {
+  "data_source": "GH Archive https://www.gharchive.org/",
+  "start_utc": "2025-12-01-0",
+  "end_utc_inclusive": "2026-11-20-23",
+  "mode": "prefilter",
+  "repo_commit": "af9f335301d9badb482dfafa10c4534eabac845a",
+  "preprocess_sha256": "e281e4f72f56b1d4e8c8c68b57ba35700f7ad7d720cd7f643e4e132935dde517",
+  "cohort_sha256": "4d3c38abfaa85928c8c6ee5ccdbaf4c5702c981167f354cdb83258d516d3309c",
+  "versions": {
+   "python": "3.14.7",
+   "pandas": "3.1.1",
+   "pyarrow": "26.0.1",
+   "platform": "macOS-14.6.1-arm64-arm-64bit-Mach-O"
+  },
+  "hours_requested": 8520,
+  "hours_missing_on_gharchive": [],
+  "raw_bytes_total": 231844846958,
+  "cohort_event_lines_total": 2395043,
+  "seconds_this_run_total": 326,
+  "seconds_preprocess": 169,
+  "rows": {
+   "IssueComments": 108552,
+   "Issues": 178378,
+   "PRReviewComments": 67462,
+   "PRReviews": 93284,
+   "PullRequests": 311681,
+   "Pushes": 1677693,
+   "Repositories": 111306,
+   "Users": 46362
+  }
+ },
+ "data_end_exclusive_utc": "2026-11-21 00:00:00",
+ "t_pred_utc": "2026-11-21 16:00:00",
+ "gap": "0 days 16:00:00",
+ "val_cutoff_utc": "2026-11-07 16:00:00",
+ "calib_cutoff_utc": "2026-10-31 16:00:00",
+ "train_cutoffs_utc": [
+  "2025-12-06 16:00:00",
+  "2025-12-13 16:00:00",
+  "2025-12-20 16:00:00",
+  "2025-12-27 16:00:00",
+  "2026-01-03 16:00:00",
+  "2026-01-10 16:00:00",
+  "2026-01-17 16:00:00",
+  "2026-01-24 16:00:00",
+  "2026-01-31 16:00:00",
+  "2026-02-07 16:00:00",
+  "2026-02-14 16:00:00",
+  "2026-02-21 16:00:00",
+  "2026-02-28 16:00:00",
+  "2026-03-07 16:00:00",
+  "2026-03-14 16:00:00",
+  "2026-03-21 16:00:00",
+  "2026-03-28 16:00:00",
+  "2026-04-04 16:00:00",
+  "2026-04-11 16:00:00",
+  "2026-04-18 16:00:00",
+  "2026-04-25 16:00:00",
+  "2026-05-02 16:00:00",
+  "2026-05-09 16:00:00",
+  "2026-05-16 16:00:00",
+  "2026-05-23 16:00:00",
+  "2026-05-30 16:00:00",
+  "2026-06-06 16:00:00",
+  "2026-06-13 16:00:00",
+  "2026-06-20 16:00:00",
+  "2026-06-27 16:00:00",
+  "2026-07-04 16:00:00",
+  "2026-07-11 16:00:00",
+  "2026-07-18 16:00:00",
+  "2026-07-25 16:00:00",
+  "2026-08-01 16:00:00",
+  "2026-08-08 16:00:00",
+  "2026-08-15 16:00:00",
+  "2026-08-22 16:00:00",
+  "2026-08-29 16:00:00",
+  "2026-09-05 16:00:00",
+  "2026-09-12 16:00:00",
+  "2026-09-19 16:00:00",
+  "2026-09-26 16:00:00",
+  "2026-10-03 16:00:00",
+  "2026-10-10 16:00:00",
+  "2026-10-17 16:00:00"
+ ],
+ "final_train_cutoffs_utc": [
+  "2025-12-06 16:00:00",
+  "2025-12-13 16:00:00",
+  "2025-12-20 16:00:00",
+  "2025-12-27 16:00:00",
+  "2026-01-03 16:00:00",
+  "2026-01-10 16:00:00",
+  "2026-01-17 16:00:00",
+  "2026-01-24 16:00:00",
+  "2026-01-31 16:00:00",
+  "2026-02-07 16:00:00",
+  "2026-02-14 16:00:00",
+  "2026-02-21 16:00:00",
+  "2026-02-28 16:00:00",
+  "2026-03-07 16:00:00",
+  "2026-03-14 16:00:00",
+  "2026-03-21 16:00:00",
+  "2026-03-28 16:00:00",
+  "2026-04-04 16:00:00",
+  "2026-04-11 16:00:00",
+  "2026-04-18 16:00:00",
+  "2026-04-25 16:00:00",
+  "2026-05-02 16:00:00",
+  "2026-05-09 16:00:00",
+  "2026-05-16 16:00:00",
+  "2026-05-23 16:00:00",
+  "2026-05-30 16:00:00",
+  "2026-06-06 16:00:00",
+  "2026-06-13 16:00:00",
+  "2026-06-20 16:00:00",
+  "2026-06-27 16:00:00",
+  "2026-07-04 16:00:00",
+  "2026-07-11 16:00:00",
+  "2026-07-18 16:00:00",
+  "2026-07-25 16:00:00",
+  "2026-08-01 16:00:00",
+  "2026-08-08 16:00:00",
+  "2026-08-15 16:00:00",
+  "2026-08-22 16:00:00",
+  "2026-08-29 16:00:00",
+  "2026-09-05 16:00:00",
+  "2026-09-12 16:00:00",
+  "2026-09-19 16:00:00",
+  "2026-09-26 16:00:00",
+  "2026-10-03 16:00:00",
+  "2026-10-10 16:00:00",
+  "2026-10-17 16:00:00",
+  "2026-10-24 16:00:00",
+  "2026-10-31 16:00:00",
+  "2026-11-07 16:00:00"
+ ],
+ "n_train_users": 9000,
+ "eval_users": "test_users",
+ "best_epoch": 4,
+ "config": {
+  "student_id": "314552039",
+  "seed": 42,
+  "smoke": false,
+  "t_pred": "2026-11-21 16:00:00",
+  "stride_days": 7,
+  "max_train_cutoffs": null,
+  "min_train_cutoff": "2025-12-01 00:00:00",
+  "num_neighbors": [
+   64,
+   32
+  ],
+  "temporal_strategy": "last",
+  "batch_size": 512,
+  "num_workers": 2,
+  "channels": 128,
+  "num_layers": 2,
+  "aggr": "mean",
+  "frame_layers": 2,
+  "use_time_encoding": true,
+  "use_global_ctx": true,
+  "dropout": 0.1,
+  "epochs": 8,
+  "patience": 3,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "pos_weight": false,
+  "max_steps_per_epoch": null,
+  "time_budget_min": 55.0,
+  "final_refit": true,
+  "eval_on": "test_users"
+ },
+ "val_results": {
+  "All zeros": {
+   "per_event": {
+    "open_pr": 0.0,
+    "open_issue": 0.0,
+    "issue_comment": 0.0,
+    "pr_review": 0.0,
+    "pr_review_comment": 0.0,
+    "push": 0.0
+   },
+   "macro_f1": 0.0,
+   "micro_f1": 0.0,
+   "score": 0.0
+  },
+  "Copy last week": {
+   "per_event": {
+    "open_pr": 0.3445255474452555,
+    "open_issue": 0.4356955380577428,
+    "issue_comment": 0.34743875278396436,
+    "pr_review": 0.3643724696356275,
+    "pr_review_comment": 0.26900584795321636,
+    "push": 0.2765151515151515
+   },
+   "macro_f1": 0.339592217898493,
+   "micro_f1": 0.3434268833087149,
+   "score": 0.34150955060360394
+  },
+  "Copy last week (gap)": {
+   "per_event": {
+    "open_pr": 0.3460410557184751,
+    "open_issue": 0.42021276595744683,
+    "issue_comment": 0.3482142857142857,
+    "pr_review": 0.36072144288577157,
+    "pr_review_comment": 0.24277456647398843,
+    "push": 0.2765151515151515
+   },
+   "macro_f1": 0.33241321137751983,
+   "micro_f1": 0.3392461197339246,
+   "score": 0.33582966555572225
+  },
+  "M1 GNN @0.5": {
+   "per_event": {
+    "open_pr": 0.30677290836653387,
+    "open_issue": 0.4329896907216495,
+    "issue_comment": 0.2698961937716263,
+    "pr_review": 0.3389391979301423,
+    "pr_review_comment": 0.23003194888178913,
+    "push": 0.30687830687830686
+   },
+   "macro_f1": 0.314251374425008,
+   "micro_f1": 0.31100591715976333,
+   "score": 0.3126286457923857
+  },
+  "M1 GNN @calib-prob-thr": {
+   "per_event": {
+    "open_pr": 0.26212040490143845,
+    "open_issue": 0.3787375415282392,
+    "issue_comment": 0.1881656804733728,
+    "pr_review": 0.268346923647146,
+    "pr_review_comment": 0.24113475177304963,
+    "push": 0.23853211009174313
+   },
+   "macro_f1": 0.26283956873583153,
+   "micro_f1": 0.2523257711767586,
+   "score": 0.2575826699562951
+  },
+  "M1 GNN @calib-rate": {
+   "per_event": {
+    "open_pr": 0.37829457364341085,
+    "open_issue": 0.41909814323607425,
+    "issue_comment": 0.3242258652094718,
+    "pr_review": 0.38415841584158417,
+    "pr_review_comment": 0.39655172413793105,
+    "push": 0.3451910408432148
+   },
+   "macro_f1": 0.3745866271519478,
+   "micro_f1": 0.36665537106065743,
+   "score": 0.37062099910630264
+  },
+  "M1 GNN @val-rate (optimistic)": {
+   "per_event": {
+    "open_pr": 0.3829787234042553,
+    "open_issue": 0.44274809160305345,
+    "issue_comment": 0.38095238095238093,
+    "pr_review": 0.3878787878787879,
+    "pr_review_comment": 0.40310077519379844,
+    "push": 0.36716417910447763
+   },
+   "macro_f1": 0.3941371563561256,
+   "micro_f1": 0.389321468298109,
+   "score": 0.3917293123271173
+  }
+ },
+ "val_auc_ap": {
+  "open_pr": {
+   "auc": 0.8119158878504672,
+   "ap": 0.36242453130551
+  },
+  "open_issue": {
+   "auc": 0.8925472487542311,
+   "ap": 0.4051524652966474
+  },
+  "issue_comment": {
+   "auc": 0.8388360553570664,
+   "ap": 0.34719653217434376
+  },
+  "pr_review": {
+   "auc": 0.8787510112044641,
+   "ap": 0.35818322666633967
+  },
+  "pr_review_comment": {
+   "auc": 0.8944491516667012,
+   "ap": 0.30526118637476407
+  },
+  "push": {
+   "auc": 0.8206606734691645,
+   "ap": 0.33095197426135897
+  }
+ },
+ "rates_calib": {
+  "open_pr": 0.07256438969764838,
+  "open_issue": 0.042777155655095184,
+  "issue_comment": 0.07883538633818589,
+  "pr_review": 0.06338185890257558,
+  "pr_review_comment": 0.011198208286674132,
+  "push": 0.11153415453527436
+ },
+ "rates_test": {
+  "open_pr": 0.06494960806270997,
+  "open_issue": 0.046360582306830905,
+  "issue_comment": 0.04524076147816349,
+  "pr_review": 0.061142217245240764,
+  "pr_review_comment": 0.014109742441209407,
+  "push": 0.0916013437849944
+ },
+ "prob_thresholds_calib": {
+  "open_pr": 0.42,
+  "open_issue": 0.37,
+  "issue_comment": 0.28,
+  "pr_review": 0.31,
+  "pr_review_comment": 0.52,
+  "push": 0.56
+ },
+ "thresholds_test_equiv": {
+  "open_pr": 0.11415062844753265,
+  "open_issue": 0.08396931737661362,
+  "issue_comment": 0.06758484244346619,
+  "pr_review": 0.04918629676103592,
+  "pr_review_comment": 0.054898981004953384,
+  "push": 0.04412506893277168
+ },
+ "history": [
+  {
+   "stage": "val-stage",
+   "epoch": 1,
+   "train_loss": 0.20689320234630418,
+   "train_sec": 125.17916774749756,
+   "val_score_th05": 0.3465547777144818,
+   "val_score_calib_probthr": 0.2660879568345812,
+   "val_score_calib_rate": 0.353295302880254,
+   "val_score_val_rate_optimistic": 0.3707084265816484,
+   "best": true
+  },
+  {
+   "stage": "val-stage",
+   "epoch": 2,
+   "train_loss": 0.19304146560378696,
+   "train_sec": 125.46917986869812,
+   "val_score_th05": 0.3105398019424679,
+   "val_score_calib_probthr": 0.26565908015589995,
+   "val_score_calib_rate": 0.3466812030163857,
+   "val_score_val_rate_optimistic": 0.36702306043438354
+  },
+  {
+   "stage": "val-stage",
+   "epoch": 3,
+   "train_loss": 0.18948591910410617,
+   "train_sec": 124.78954553604126,
+   "val_score_th05": 0.3131565496250778,
+   "val_score_calib_probthr": 0.22819506689274094,
+   "val_score_calib_rate": 0.3563640068171047,
+   "val_score_val_rate_optimistic": 0.37274059892798617,
+   "best": true
+  },
+  {
+   "stage": "val-stage",
+   "epoch": 4,
+   "train_loss": 0.18726037594776798,
+   "train_sec": 125.16235542297363,
+   "val_score_th05": 0.3126286457923857,
+   "val_score_calib_probthr": 0.2575826699562951,
+   "val_score_calib_rate": 0.37062099910630264,
+   "val_score_val_rate_optimistic": 0.3917293123271173,
+   "best": true
+  },
+  {
+   "stage": "val-stage",
+   "epoch": 5,
+   "train_loss": 0.18559500613707852,
+   "train_sec": 124.84700679779053,
+   "val_score_th05": 0.3408915263011053,
+   "val_score_calib_probthr": 0.27846662144202083,
+   "val_score_calib_rate": 0.35790074397465377,
+   "val_score_val_rate_optimistic": 0.39301659318361404
+  },
+  {
+   "stage": "val-stage",
+   "epoch": 6,
+   "train_loss": 0.18388761383151087,
+   "train_sec": 124.83217096328735,
+   "val_score_th05": 0.3324721260026703,
+   "val_score_calib_probthr": 0.2574807992763952,
+   "val_score_calib_rate": 0.36744558378974546,
+   "val_score_val_rate_optimistic": 0.3881478750497839
+  },
+  {
+   "stage": "val-stage",
+   "epoch": 7,
+   "train_loss": 0.18237043846862905,
+   "train_sec": 124.04808449745178,
+   "val_score_th05": 0.35929912686075405,
+   "val_score_calib_probthr": 0.27564721672860615,
+   "val_score_calib_rate": 0.36381242306898914,
+   "val_score_val_rate_optimistic": 0.39211409542537357
+  },
+  {
+   "stage": "final",
+   "epoch": 1,
+   "train_loss": 0.20095554258601736,
+   "train_sec": 131.69002842903137
+  },
+  {
+   "stage": "final",
+   "epoch": 2,
+   "train_loss": 0.18686484117626873,
+   "train_sec": 132.97285628318787
+  },
+  {
+   "stage": "final",
+   "epoch": 3,
+   "train_loss": 0.1834383031383934,
+   "train_sec": 134.22894525527954
+  },
+  {
+   "stage": "final",
+   "epoch": 4,
+   "train_loss": 0.18103150640377383,
+   "train_sec": 133.3348889350891
+  }
+ ],
+ "test_pred_positive_rate": {
+  "open_pr": 0.06494960806270997,
+  "open_issue": 0.046360582306830905,
+  "issue_comment": 0.04524076147816349,
+  "pr_review": 0.061142217245240764,
+  "pr_review_comment": 0.014109742441209407,
+  "push": 0.0916013437849944
+ },
+ "output_csv": "/kaggle/working/output_314552039.csv",
+ "evaluate_format_check": "Format check: no errors (4465 users)"
+}
